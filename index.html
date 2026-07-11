@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    localStorage.setItem("theme", "light");
-    document.documentElement.setAttribute("data-theme", "light");
-  </script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marjorie Schwarzer | Architectural & Urban Historian</title>
@@ -16,7 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Custom Stylesheets -->
-  <style>
+  
+<style>
+
 /* Premium Styling for Marjorie Schwarzer Portfolio */
 
 :root {
@@ -1143,6 +1142,36 @@ footer {
   }
 }
 
+
+@media (max-width: 1024px) {
+  header .container {
+    height: auto;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .header-brand {
+    margin-right: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1158,7 +1187,8 @@ footer {
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#books" class="nav-link">Books</a></li>
-          <li><a href="#publications-hub" class="nav-link">Publications</a></li>
+          <li><a href="#publications-hub" class="nav-link" id="nav-pubs-link">Publications</a></li>
+          <li><a href="#publications-hub" class="nav-link" id="nav-media-link">Multi-Media Appearances</a></li>
           <li><a href="#courses" class="nav-link">Teaching</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -1291,8 +1321,7 @@ footer {
           <li><button class="tab-btn" data-tab="chapters" role="tab" aria-selected="false">Chapters</button></li>
           <li><button class="tab-btn" data-tab="essays" role="tab" aria-selected="false">Essays</button></li>
           <li><button class="tab-btn" data-tab="lectures" role="tab" aria-selected="false">Lectures</button></li>
-          <li><button class="tab-btn" data-tab="videos" role="tab" aria-selected="false">Videos</button></li>
-          <li><button class="tab-btn" data-tab="regional_activities" role="tab" aria-selected="false">Podcasts & Media</button></li>
+          <li><button class="tab-btn" data-tab="interviews_media" role="tab" aria-selected="false">Interviews & Media</button></li>
           <li><button class="tab-btn" data-tab="reviews" role="tab" aria-selected="false">Reviews</button></li>
         </ul>
         
@@ -1366,7 +1395,8 @@ footer {
             <li><a href="#about">Biography</a></li>
             <li><a href="#experience">Academic Positions</a></li>
             <li><a href="#books">Featured Books</a></li>
-            <li><a href="#publications-hub">Publications Hub</a></li>
+            <li><a href="#publications-hub" id="footer-pubs-link">Publications Hub</a></li>
+            <li><a href="#publications-hub" id="footer-media-link">Multi-Media Appearances</a></li>
           </ul>
         </div>
         <div>
@@ -1394,7 +1424,8 @@ footer {
   </footer>
 
   <!-- Script tags -->
-  <script>
+  
+<script>
 const localCvData = {
   "personal": {
     "name": "Marjorie Schwarzer",
@@ -1491,7 +1522,7 @@ const localCvData = {
       "publisher": "Rowman & Littlefield / American Alliance of Museums",
       "year": "2020",
       "pages": "304 pp.",
-      "url": "https://rowman.com/ISBN/9781538139042/Riches-Rivals-and-Radicals-100-Years-of-Museums-in-America-Third-Edition",
+      "url": "https://www.goodreads.com/book/show/1557008.Riches_Rivals_and_Radicals",
       "featured": true,
       "description": "An essential historical exploration of American museums over the past century, detailing how they evolved from private cabinets of curiosity to major public centers of education, civic engagement, and community reflection."
     },
@@ -1500,7 +1531,7 @@ const localCvData = {
       "publisher": "Bloomsbury Academic",
       "year": "2001",
       "pages": "220 pp.",
-      "url": "https://www.bloomsbury.com",
+      "url": "https://www.goodreads.com/book/show/2443026.What_Students_Need_to_Know",
       "featured": true,
       "description": "A comprehensive overview of museum studies training, guiding museum career pathways, certification, and academic training frameworks."
     }
@@ -1550,7 +1581,15 @@ const localCvData = {
       "type": "Award",
       "source": "Western Museums Association",
       "date": "2018",
-      "url": "https://westmuse.org"
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "White House directive concerning Smithsonian exhibits review",
+      "type": "TV Appearance",
+      "source": "ABC News",
+      "date": "August 2025",
+      "url": "https://www.youtube.com/watch?v=hA3qpGxDGfQ"
     }
   ],
   "courses": {
@@ -1581,7 +1620,23 @@ const localCvData = {
     "Member: Western Museums Association Board (2008 - 2014)",
     "Advisory Council: California Historical Society (2005 - 2010)"
   ],
-  "videos": [],
+  "videos": [
+    {
+      "title": "An Elephant in the Closet: The history of habitat dioramas",
+      "source": "Berkeley LASER Series",
+      "date": "Feb 8, 2017",
+      "url": "https://www.youtube.com/watch?v=YUTzHT20jds",
+      "snippet": "Recorded presentation on art and science in museum habitat dioramas."
+    },
+    {
+      "title": "The WPA's Great Depression Museum Boom",
+      "source": "Great Museums / Britannica",
+      "date": "2015",
+      "url": "",
+      "url_unavailable": true,
+      "snippet": "Expert commentary on the role of the WPA in American museums."
+    }
+  ],
   "lectures": []
 };
 
@@ -1635,7 +1690,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   // Fetch CV data
-  cvData = localCvData;
+    cvData = localCvData;
   renderPortfolio();
     
   // Render main layout components
@@ -1806,12 +1861,55 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (activeTab === "lectures") {
       list = cvData.lectures;
       itemType = "Lecture";
-    } else if (activeTab === "videos") {
-      list = cvData.videos;
-      itemType = "Video";
-    } else if (activeTab === "regional_activities") {
-      list = cvData.regional_activities;
-      itemType = "Media/Activity";
+    } else if (activeTab === "interviews_media") {
+      // Combine videos and regional_activities
+      const videos = cvData.videos || [];
+      const regional = cvData.regional_activities || [];
+      
+      const mappedVideos = videos.map(v => ({
+        title: v.title,
+        type: "Video",
+        source: v.source,
+        date: v.date,
+        url: v.url,
+        details: v.snippet || "",
+        url_unavailable: v.url_unavailable || false
+      }));
+      
+      const mappedRegional = regional.map(r => ({
+        title: r.title,
+        type: r.type || "Media/Activity",
+        source: r.source,
+        date: r.date,
+        url: r.url,
+        details: r.details || "",
+        url_unavailable: r.url_unavailable || false
+      }));
+      
+      list = [...mappedVideos, ...mappedRegional];
+      
+      // Chronological sort helper
+      const parseItemDate = (dateStr) => {
+        if (!dateStr) return 0;
+        const d = Date.parse(dateStr);
+        if (!isNaN(d)) return d;
+        const yearMatch = dateStr.match(/\d{4}/);
+        if (yearMatch) {
+          let val = parseInt(yearMatch[0]);
+          const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+          const lowercase = dateStr.toLowerCase();
+          for (let i = 0; i < months.length; i++) {
+            if (lowercase.includes(months[i])) {
+              return val * 12 + i;
+            }
+          }
+          return val * 12;
+        }
+        return 0;
+      };
+      
+      list.sort((a, b) => parseItemDate(b.date) - parseItemDate(a.date));
+      itemType = "Interviews & Media";
     }
     
     // Apply Search Filter
@@ -1857,14 +1955,12 @@ document.addEventListener("DOMContentLoaded", () => {
         metaText = `Review in <strong>${item.journal}</strong> (${item.year}) ${item.pages ? `, pages ${item.pages}` : ''}`;
       } else if (activeTab === "lectures") {
         metaText = `Delivered at <strong>${item.institution}</strong> • ${item.date}`;
-      } else if (activeTab === "videos") {
-        metaText = `Video via <strong>${item.source}</strong> • Published ${item.date}`;
-      } else if (activeTab === "regional_activities") {
+      } else if (activeTab === "interviews_media") {
         metaText = `<strong>${item.type}</strong> via ${item.source} • ${item.date}`;
       }
       
       const targetUrl = item.url || "#";
-      const hasUrl = item.url && item.url !== "#";
+      const hasUrl = item.url && item.url !== "#" && !item.url_unavailable;
       
       return `
         <div class="item-row">
@@ -1872,6 +1968,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="item-meta" style="margin-bottom: 0.5rem;">
               <span class="item-tag">${item.type || itemType}</span>
               ${item.volume ? `<span class="item-tag" style="background-color: transparent; border: 1px solid var(--border-color);">${item.volume}</span>` : ''}
+              ${!hasUrl ? `
+                <span class="item-tag" style="background-color: transparent; border: 1px dashed var(--border-color); color: var(--text-tertiary); font-size: 0.72rem; font-style: italic; font-weight: 500;">
+                  ${(item.type === "Video" || item.type === "TV Appearance" || item.type === "Radio Interview" || item.type === "Podcast" || activeTab === "interviews_media") ? "Broadcast Unavailable" : "Link Unavailable"}
+                </span>
+              ` : ''}
             </div>
             ${hasUrl ? `
               <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" class="item-title-link">
@@ -2009,6 +2110,44 @@ document.addEventListener("DOMContentLoaded", () => {
     return 0; // Default fallback
   }
   
+  // Programmatic Tab Switcher
+  function switchTab(tabName) {
+    const targetBtn = hubTabs.querySelector(`[data-tab="${tabName}"]`);
+    if (!targetBtn) return;
+    
+    hubTabs.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.classList.remove("active");
+      btn.setAttribute("aria-selected", "false");
+    });
+    
+    targetBtn.classList.add("active");
+    targetBtn.setAttribute("aria-selected", "true");
+    
+    activeTab = tabName;
+    itemsLimit = 10;
+    renderHub();
+  }
+  
+  // Link Click Handlers
+  const pubsLinks = [document.getElementById("nav-pubs-link"), document.getElementById("footer-pubs-link")];
+  const mediaLinks = [document.getElementById("nav-media-link"), document.getElementById("footer-media-link")];
+  
+  pubsLinks.forEach(link => {
+    if (link) {
+      link.addEventListener("click", () => {
+        switchTab("scholarly_articles");
+      });
+    }
+  });
+  
+  mediaLinks.forEach(link => {
+    if (link) {
+      link.addEventListener("click", () => {
+        switchTab("interviews_media");
+      });
+    }
+  });
+
   // Scroll spy helper to highlight active link
   const sections = document.querySelectorAll("section, footer");
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -2032,6 +2171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 
 </script>
 </body>
