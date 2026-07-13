@@ -1,0 +1,215 @@
+{
+  "personal": {
+    "name": "Marjorie Schwarzer",
+    "title": "Museum Studies Educator, Author & Critic",
+    "subtitle": "Professor Emeritus and Founding Administrative Director of the Museum Studies Graduate Program at the University of San Francisco (USF)",
+    "emails": [
+      "mschwarzer@usfca.edu",
+      "Marjorie.Schwarzer@gmail.com"
+    ],
+    "bio": "Marjorie Schwarzer is a prominent American museum studies educator, author, and critic. She served as the founding Administrative Director of the Museum Studies graduate program at the University of San Francisco (USF) until her retirement in 2020. Prior to USF, she chaired the Department of Museum Studies at John F. Kennedy University for over 15 years. Her research and publications focus on the history and evolution of museums in America, museology, and decolonization of cultural institutions. She was awarded the Western Museums Association (WMA) Leadership Award in 2018.",
+    "external_links": [
+      {
+        "name": "USF Faculty Hub",
+        "url": "https://www.usfca.edu"
+      },
+      {
+        "name": "WMA Award Profile",
+        "url": "https://westmuse.org"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Boston University",
+      "location": "Boston, MA",
+      "degree": "Master of Science",
+      "field": "Journalism / Museum Education",
+      "date": "June 1983"
+    },
+    {
+      "institution": "Emory University",
+      "location": "Atlanta, GA",
+      "degree": "Bachelor of Arts",
+      "field": "Art History & French",
+      "date": "June 1979"
+    }
+  ],
+  "positions": [
+    {
+      "institution": "University of San Francisco",
+      "location": "San Francisco, CA",
+      "department": "Department of Art History and Museum Studies",
+      "roles": [
+        {
+          "title": "Administrative Director & Professor",
+          "period": "2011 - 2020",
+          "administrative": [
+            "Founding Director of the USF Museum Studies Graduate Program",
+            "USF Faculty Service Award Recipient (2016)"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "John F. Kennedy University",
+      "location": "Orinda, CA",
+      "department": "Department of Museum Studies",
+      "roles": [
+        {
+          "title": "Professor & Department Chair",
+          "period": "1996 - 2011"
+        }
+      ]
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Boston Children's Museum",
+      "location": "Boston, MA",
+      "title": "Director of Education",
+      "period": "1990 - 1995",
+      "details": "Managed museum educational programming, school partnerships, and curriculum alignment."
+    },
+    {
+      "company": "Chicago Children's Museum",
+      "location": "Chicago, IL",
+      "title": "Director of Education & Exhibits",
+      "period": "1985 - 1989",
+      "details": "Directed educational programming and community exhibition outreach."
+    },
+    {
+      "company": "Museum of Science and Industry",
+      "location": "Chicago, IL",
+      "title": "Exhibit Developer & Educator",
+      "period": "1981 - 1984",
+      "details": "Developed interactive exhibits and science communication guidelines."
+    }
+  ],
+  "books": [
+    {
+      "title": "Riches, Rivals, and Radicals: 100 Years of Museums in America",
+      "publisher": "Rowman & Littlefield / American Alliance of Museums",
+      "year": "2020",
+      "pages": "304 pp.",
+      "url": "https://www.goodreads.com/book/show/52548893-riches-rivals-and-radicals",
+      "featured": true,
+      "description": "An essential historical exploration of American museums over the past century, detailing how they evolved from private cabinets of curiosity to major public centers of education, civic engagement, and community reflection."
+    },
+    {
+      "title": "What Students Need to Know: Graduate Training in Museum Studies",
+      "publisher": "Bloomsbury Academic",
+      "year": "2001",
+      "pages": "220 pp.",
+      "url": "https://www.goodreads.com/book/show/1612202.What_Students_Need_to_Know",
+      "featured": true,
+      "description": "A comprehensive overview of museum studies training, guiding museum career pathways, certification, and academic training frameworks."
+    }
+  ],
+  "edited_works": [],
+  "chapters": [
+    {
+      "title": "Museum Studies",
+      "book": "Encyclopedia of Library and Information Sciences",
+      "publisher": "Taylor & Francis Group",
+      "year": "2017",
+      "pages": "3421-3435",
+      "url": "",
+      "url_unavailable": true
+    }
+  ],
+  "scholarly_articles": [
+    {
+      "title": "Decolonizing Museum Studies: Decades of Practice and Advocacy",
+      "journal": "Museum Magazine",
+      "volume": "102.2",
+      "year": "2023",
+      "pages": "28-39",
+      "url": "",
+      "url_unavailable": true
+    }
+  ],
+  "essays": [
+    {
+      "title": "Creative Aging Programs in Local Museums",
+      "publication": "Museum Magazine",
+      "date": "May 2021",
+      "url": "",
+      "url_unavailable": true
+    }
+  ],
+  "reviews": [
+    {
+      "title": "Review of Michelle Henning, Photography: The Unfettered Image",
+      "journal": "Museum History Review",
+      "volume": "14",
+      "year": "2020",
+      "pages": "112-114",
+      "url": "",
+      "url_unavailable": true
+    }
+  ],
+  "regional_activities": [
+    {
+      "title": "Recipient of the Western Museums Association (WMA) Leadership Award",
+      "type": "Award",
+      "source": "Western Museums Association",
+      "date": "2018",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "White House directive concerning Smithsonian exhibits review",
+      "type": "TV Appearance",
+      "source": "ABC News",
+      "date": "August 2025",
+      "url": "https://www.youtube.com/watch?v=hA3qpGxDGfQ"
+    }
+  ],
+  "courses": {
+    "lectures": [
+      "Introduction to Museum Studies",
+      "History of Museums in America",
+      "Museum Administration & Governance"
+    ],
+    "seminars": [
+      "Museum Ethics & Law",
+      "Exhibition Planning & Design",
+      "Decolonizing the Museum Space",
+      "Visitor Studies & Evaluation"
+    ],
+    "workshops": [
+      "Grant Writing for Cultural Non-Profits",
+      "Museum Education & Programming"
+    ]
+  },
+  "fellowships": [
+    "WMA Leadership Award (2018)",
+    "American Alliance of Museums Centennial Honor Roll (2006)",
+    "USF Faculty Service Award (2016)",
+    "Boston University Scholarship in Museum Education (1981-1983)"
+  ],
+  "community": [
+    "Editorial Board: Museum History, AAM (2015 - present)",
+    "Member: Western Museums Association Board (2008 - 2014)",
+    "Advisory Council: California Historical Society (2005 - 2010)"
+  ],
+  "videos": [
+    {
+      "title": "An Elephant in the Closet: The history of habitat dioramas",
+      "source": "Berkeley LASER Series",
+      "date": "Feb 8, 2017",
+      "url": "https://www.youtube.com/watch?v=YUTzHT20jds",
+      "snippet": "Recorded presentation on art and science in museum habitat dioramas."
+    },
+    {
+      "title": "The WPA's Great Depression Museum Boom",
+      "source": "Great Museums / Britannica",
+      "date": "2015",
+      "url": "",
+      "url_unavailable": true,
+      "snippet": "Expert commentary on the role of the WPA in American museums."
+    }
+  ],
+  "lectures": []
+}
