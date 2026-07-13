@@ -4,7 +4,7 @@
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marjorie Schwarzer | Architectural & Urban Historian</title>
+  <title>Marjorie Schwarzer | Museum Studies Educator & Author</title>
   <meta name="description" content="Official portfolio website of Marjorie Schwarzer, Professor Emeritus of Museum Studies at the University of San Francisco (USF) and author of Riches, Rivals, and Radicals.">
   
   <!-- Google Fonts -->
@@ -1522,7 +1522,7 @@ const localCvData = {
       "publisher": "Rowman & Littlefield / American Alliance of Museums",
       "year": "2020",
       "pages": "304 pp.",
-      "url": "https://www.goodreads.com/book/show/1557008.Riches_Rivals_and_Radicals",
+      "url": "https://www.goodreads.com/book/show/52548893-riches-rivals-and-radicals",
       "featured": true,
       "description": "An essential historical exploration of American museums over the past century, detailing how they evolved from private cabinets of curiosity to major public centers of education, civic engagement, and community reflection."
     },
@@ -1531,7 +1531,7 @@ const localCvData = {
       "publisher": "Bloomsbury Academic",
       "year": "2001",
       "pages": "220 pp.",
-      "url": "https://www.goodreads.com/book/show/2443026.What_Students_Need_to_Know",
+      "url": "https://www.goodreads.com/book/show/1612202.What_Students_Need_to_Know",
       "featured": true,
       "description": "A comprehensive overview of museum studies training, guiding museum career pathways, certification, and academic training frameworks."
     }
@@ -1835,7 +1835,11 @@ document.addEventListener("DOMContentLoaded", () => {
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
               </a>
-            ` : ''}
+            ` : `
+              <span class="book-link-unavailable" style="font-size: 0.85rem; color: var(--text-tertiary); font-style: italic; display: inline-flex; align-items: center; gap: 0.25rem;">
+                Not publicly available
+              </span>
+            `}
           </div>
         </article>
       `;
