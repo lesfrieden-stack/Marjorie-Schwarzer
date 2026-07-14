@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marjorie Schwarzer | Museum Studies Educator & Author</title>
-  <meta name="description" content="Official portfolio website of Marjorie Schwarzer, Professor Emeritus of Museum Studies at the University of San Francisco (USF) and author of Riches, Rivals, and Radicals.">
+  <meta name="description" content="Official portfolio website of Marjorie Schwarzer, Founding Administrative Director of the Museum Studies Graduate Program at the University of San Francisco (USF) and author of Riches, Rivals, and Radicals.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1190,6 +1190,7 @@ footer {
           <li><a href="#publications-hub" class="nav-link" id="nav-pubs-link">Publications</a></li>
           <li><a href="#publications-hub" class="nav-link" id="nav-media-link">Multi-Media Appearances</a></li>
           <li><a href="#courses" class="nav-link">Teaching</a></li>
+          <li><a href="#lectures-presentations" class="nav-link" id="nav-lectures-link">Lectures</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -1215,7 +1216,7 @@ footer {
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <span class="hero-badge">Professor Emeritus</span>
+          <span class="hero-badge">Museum Studies Educator</span>
           <h1 class="hero-title" id="author-name">Marjorie Schwarzer</h1>
           <p class="hero-subtitle">Museum Studies Educator & Author</p>
           <p class="hero-text">
@@ -1281,9 +1282,6 @@ footer {
           </p>
         </div>
         <div>
-          <h3 style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2rem; color: var(--text-secondary);">
-            Academic Credentials
-          </h3>
           <div class="education-list" id="education-container">
             <!-- Rendered by JavaScript -->
           </div>
@@ -1323,7 +1321,6 @@ footer {
           <li><button class="tab-btn active" data-tab="scholarly_articles" role="tab" aria-selected="true">Articles</button></li>
           <li><button class="tab-btn" data-tab="chapters" role="tab" aria-selected="false">Chapters</button></li>
           <li><button class="tab-btn" data-tab="essays" role="tab" aria-selected="false">Essays</button></li>
-          <li><button class="tab-btn" data-tab="lectures" role="tab" aria-selected="false">Lectures</button></li>
           <li><button class="tab-btn" data-tab="interviews_media" role="tab" aria-selected="false">Interviews & Media</button></li>
           <li><button class="tab-btn" data-tab="reviews" role="tab" aria-selected="false">Reviews</button></li>
         </ul>
@@ -1360,18 +1357,44 @@ footer {
     </div>
   </section>
 
+  <!-- Lectures & Public Presentations Section -->
+  <section id="lectures-presentations" class="section">
+    <div class="container">
+      <h2 class="section-title">Lectures & Public Presentations</h2>
+      
+      <!-- Filter Controls -->
+      <div class="hub-controls" style="margin-bottom: 2.5rem; justify-content: flex-start;">
+        <ul class="tabs-list" id="lectures-tabs" role="tablist">
+          <li><button class="tab-btn active" data-tab="keynotes" role="tab" aria-selected="true">Keynote & Plenary Addresses</button></li>
+          <li><button class="tab-btn" data-tab="public_lectures" role="tab" aria-selected="false">Public Lectures</button></li>
+          <li><button class="tab-btn" data-tab="conferences" role="tab" aria-selected="false">Conferences</button></li>
+        </ul>
+      </div>
+
+      <!-- Lectures Grid -->
+      <div class="hub-grid" id="lectures-items-container">
+        <!-- Dynamic loading of elements by JS -->
+      </div>
+      
+      <!-- Load More Button -->
+      <div class="load-more-container" style="margin-top: 2rem; text-align: center;">
+        <button id="lectures-load-more-btn" class="btn btn-secondary" style="display: none;">Load More</button>
+      </div>
+    </div>
+  </section>
+
   <!-- Fellowships & Editorial Boards -->
   <section id="community" class="section">
     <div class="container">
       <div class="misc-grid">
         <div>
-          <h2 class="section-title" style="margin-bottom: 2.5rem;">Grants & Fellowships</h2>
+          <h2 class="section-title" style="margin-bottom: 2.5rem;">Professional Awards</h2>
           <div id="fellowships-container">
             <!-- Rendered by JavaScript -->
           </div>
         </div>
         <div>
-          <h2 class="section-title" style="margin-bottom: 2.5rem;">Editorial Boards</h2>
+          <h2 class="section-title" style="margin-bottom: 2.5rem;">Editorial & Advisory Boards</h2>
           <div id="community-container">
             <!-- Rendered by JavaScript -->
           </div>
@@ -1389,7 +1412,7 @@ footer {
             Marjorie <span>Schwarzer</span>
           </div>
           <p class="footer-desc">
-            Professor Emeritus of Museum Studies, USF. Author of Riches, Rivals, and Radicals: 100 Years of Museums in America.
+            Founding Administrative Director of the Museum Studies Graduate Program, USF. Author of Riches, Rivals, and Radicals: 100 Years of Museums in America.
           </p>
         </div>
         <div>
@@ -1400,6 +1423,7 @@ footer {
             <li><a href="#books">Featured Books</a></li>
             <li><a href="#publications-hub" id="footer-pubs-link">Publications Hub</a></li>
             <li><a href="#publications-hub" id="footer-media-link">Multi-Media Appearances</a></li>
+            <li><a href="#lectures-presentations" id="footer-lectures-link">Lectures & Public Presentations</a></li>
           </ul>
         </div>
         <div>
@@ -1427,7 +1451,7 @@ const localCvData = {
   "personal": {
     "name": "Marjorie Schwarzer",
     "title": "Museum Studies Educator, Author & Critic",
-    "subtitle": "Professor Emeritus and Founding Administrative Director of the Museum Studies Graduate Program at the University of San Francisco (USF)",
+    "subtitle": "Founding Administrative Director of the Museum Studies Graduate Program at the University of San Francisco (USF)",
     "emails": [
       "mschwarzer@usfca.edu",
       "Marjorie.Schwarzer@gmail.com"
@@ -1446,18 +1470,10 @@ const localCvData = {
   },
   "education": [
     {
-      "institution": "Boston University",
-      "location": "Boston, MA",
-      "degree": "Master of Science",
-      "field": "Journalism / Museum Education",
-      "date": "June 1983"
+      "text": "Bachelor of Arts in Art History & French, <strong>Washington University, St. Louis</strong>. BA, December 1978."
     },
     {
-      "institution": "Emory University",
-      "location": "Atlanta, GA",
-      "degree": "Bachelor of Arts",
-      "field": "Art History & French",
-      "date": "June 1979"
+      "text": "Completed additional graduate coursework in education (Wheelock College, Boston, MA, 1991) and German Language certificate (University of Vienna, 1990)."
     }
   ],
   "positions": [
@@ -1470,8 +1486,7 @@ const localCvData = {
           "title": "Administrative Director & Professor",
           "period": "2011 - 2020",
           "administrative": [
-            "Founding Director of the USF Museum Studies Graduate Program",
-            "USF Faculty Service Award Recipient (2016)"
+            "Founding Director of the USF Museum Studies Graduate Program"
           ]
         }
       ]
@@ -1483,32 +1498,37 @@ const localCvData = {
       "roles": [
         {
           "title": "Professor & Department Chair",
-          "period": "1996 - 2011"
+          "period": "1996 - 2011",
+          "administrative": [
+            "JFKU Diversity Grant, 2003",
+            "Distinguished Teaching Award, 2003",
+            "Founded three scholarship programs"
+          ]
         }
       ]
     }
   ],
   "professional_experience": [
     {
-      "company": "Boston Children's Museum",
-      "location": "Boston, MA",
-      "title": "Director of Education",
-      "period": "1990 - 1995",
-      "details": "Managed museum educational programming, school partnerships, and curriculum alignment."
-    },
-    {
       "company": "Chicago Children's Museum",
       "location": "Chicago, IL",
-      "title": "Director of Education & Exhibits",
-      "period": "1985 - 1989",
-      "details": "Directed educational programming and community exhibition outreach."
+      "title": "Director of Education",
+      "period": "1991 - 1995",
+      "details": "Oversaw arts, science, and cultural awareness curriculum. Planned expansion to 57,000 square foot facility at Navy Pier."
     },
     {
-      "company": "Museum of Science and Industry",
-      "location": "Chicago, IL",
-      "title": "Exhibit Developer & Educator",
-      "period": "1981 - 1984",
-      "details": "Developed interactive exhibits and science communication guidelines."
+      "company": "Boston Children's Museum",
+      "location": "Boston, MA",
+      "title": "Development Officer",
+      "period": "1986 - 1991",
+      "details": "Increased annual funding for exhibits, education and outreach from $135,000 to $1.9 million. Raised funds for major exhibits on multiculturalism, Japanese culture, and early childhood science, and over 30 programs serving teachers, children-at-risk, and children with special needs."
+    },
+    {
+      "company": "Independent Consulting",
+      "location": "Oakland, CA",
+      "title": "Consultant",
+      "period": "1981 - present",
+      "details": "Consulting clients and projects (1981 – present):<ul class=\"timeline-consulting\" style=\"margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.5;\"><li style=\"margin-bottom: 0.25rem;\"><strong>American Alliance of Museums</strong>, Creative Aging Programming: <a href=\"https://www.aam-us.org/programs/museums-creative-aging/\" target=\"_blank\" style=\"color: var(--accent-color); text-decoration: underline;\">AAM Creative Aging</a></li><li style=\"margin-bottom: 0.25rem;\"><strong>American Alliance of Museums</strong>, Imprint Series: <a href=\"https://www.aam-us.org/programs/imprint-series/\" target=\"_blank\" style=\"color: var(--accent-color); text-decoration: underline;\">Imprint Series</a></li><li style=\"margin-bottom: 0.25rem;\"><strong>Los Angeles County Museum of Art</strong>, Creative Aging Programming (2022-2024)</li><li style=\"margin-bottom: 0.25rem;\"><strong>LEGO Foundation</strong>: Museum Learning Through Play (2021 – 2023): <a href=\"https://www.lego.com/en-us/sustainability/museum-network?locale=en-us\" target=\"_blank\" style=\"color: var(--accent-color); text-decoration: underline;\">LEGO Museum Network</a></li><li style=\"margin-bottom: 0.25rem;\"><strong>Deborah Frieden and Associates</strong>: Supported lead consultant with research, on-site facilitation and report writing for strategic plans for the Arkansas Arts Center; Mint Museum of Charlotte North Carolina; San Francisco Chinatown Cultural Project; Monterey Museum of Art (2013 – present)</li><li style=\"margin-bottom: 0.25rem;\"><strong>Foster Youth Museum</strong> (2017): <a href=\"https://calyouthconn.org/leadership-in-action/foster-youth-museum/\" target=\"_blank\" style=\"color: var(--accent-color); text-decoration: underline;\">Foster Youth Museum</a></li><li style=\"margin-bottom: 0.25rem;\"><strong>Oakland Museum of California</strong> (2007): Lead writer and curator, <em>Passion and Perseverance: The Past and Future of the Oakland Museum</em></li><li style=\"margin-bottom: 0.25rem;\"><strong>Palo Alto Junior Museum and Zoo</strong>, Educational Advising (2001)</li><li style=\"margin-bottom: 0.25rem;\"><strong>Chabot Space and Science Center</strong>, Wrote Annual Report (1999)</li><li style=\"margin-bottom: 0.25rem;\"><strong>Museum of Science and Industry, Chicago</strong>: Project Manager for Center for Disease Control national traveling exhibit on HIV/AIDS for National AIDS Exhibit Consortium (1992)</li><li style=\"margin-bottom: 0.25rem;\"><strong>Indianapolis Children’s Museum</strong>: Membership Survey (1992)</li><li style=\"margin-bottom: 0.25rem;\"><strong>American International School, Vienna Austria</strong>: established fundraising program and alumni giving program, 1989-90);</li><li style=\"margin-bottom: 0.25rem;\"><strong>Boston City Hospital</strong>: Feasibility study for youth violence prevention program (1988)</li><li style=\"margin-bottom: 0.25rem;\"><strong>Grantwriting</strong>: MIT Museum (1986); San Francisco Museum of Modern Art (1985); Planned Parenthood San Francisco Mime Troupe (1984), San Francisco Jazz in the City (1985)</li></ul>"
     }
   ],
   "books": [
@@ -1531,39 +1551,451 @@ const localCvData = {
       "description": "A comprehensive overview of museum studies training, guiding museum career pathways, certification, and academic training frameworks."
     }
   ],
-  "edited_works": [],
   "chapters": [
+    {
+      "title": "Practical and Laborious: Museum Studies in the United States",
+      "book": "The Theory of Museology: Main Schools of Thought 1960-2000",
+      "editor": "Delia Tzortzaki and Stefanos Keramidas",
+      "publisher": "Norwegian Institute at Athens publication series",
+      "year": "2022",
+      "details": "Translated into Chinese by East Asia Archaeology (Shandong University: 博物院 双月刊 2025年第5期 总第53期)",
+      "url": "",
+      "url_unavailable": true
+    },
     {
       "title": "Museum Studies",
       "book": "Encyclopedia of Library and Information Sciences",
+      "editor": "Taylor & Francis Group",
       "publisher": "Taylor & Francis Group",
       "year": "2017",
       "pages": "3421-3435",
+      "url": "",
+      "url_unavailable": true
+    },
+
+    {
+      "title": "Divergent Agendas and Dobles Vidas: A Folk Art Curating Partnership between University of San Francisco and The Mexican Museum",
+      "book": "Innovative Practice in Museums",
+      "editor": "Juilee Decker",
+      "publisher": "Rowman & Littlefield",
+      "year": "2015",
+      "details": "Co-authored with Glori Simmons and Marlena Cannon de Mendez",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Tap into your Passions",
+      "book": "Teaching the Museum: Careers in Museum Education",
+      "editor": "Leah Melber",
+      "publisher": "The AAM Press, Washington DC",
+      "year": "2014",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "No Heroes: Revisiting the Museum Leadership Crisis",
+      "book": "Museums and the Paradox of Change",
+      "editor": "Robert Janes",
+      "publisher": "Routledge, London",
+      "year": "2013",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Social Change and the Rules of the Game: A Conversation about Museum Values in the United Arab Emirates",
+      "book": "Reimaging Museums: Practice in the Arabian Peninsula",
+      "editor": "Pamela Erskine-Loftus",
+      "publisher": "MuseumsETC, Edinburgh & Cambridge",
+      "year": "2013",
+      "pages": "204-237",
+      "details": "Co-authored with Leigh Markopoulos and Aisha Deemas",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "“Mining the Museum revisited” a conversation with Fred Wilson and Paula Marincola",
+      "book": "Letting Go: Sharing Historical Authority in a User-Generated World",
+      "editor": "Bill Adair, Benjamin Filene and Laura Koloski",
+      "publisher": "The Pew Center for Arts and Heritage (Philadelphia)",
+      "year": "2011",
+      "pages": "230 – 241",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Butterflies in the Basement: Requiem for the Snow Museum of Natural History",
+      "book": "The Marvelous Museum",
+      "editor": "Andrew Leland",
+      "publisher": "Chronicle Books",
+      "year": "2010",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Museum Studies and Museum Careers",
+      "book": "Encyclopedia of Library Information",
+      "editor": "Taylor & Francis",
+      "publisher": "Taylor & Francis",
+      "year": "2010",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Dealing with Prejudice and Discrimination in a Museum Environment",
+      "book": "Museum Management Handbook",
+      "editor": "Gail Lord and Barry Lord",
+      "publisher": "Stationary Office, London",
+      "year": "1997",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Multikultural Vielfalt in Kindermuseums",
+      "book": "Kinder- und Jugendmuseum: Kulturort mit Zukunft",
+      "editor": "Nel Worm",
+      "publisher": "BJKE Verlag, Unna",
+      "year": "1994",
       "url": "",
       "url_unavailable": true
     }
   ],
   "scholarly_articles": [
     {
-      "title": "Decolonizing Museum Studies: Decades of Practice and Advocacy",
-      "journal": "Museum Magazine",
-      "volume": "102.2",
-      "year": "2023",
-      "pages": "28-39",
+      "title": "Meeting the Moment: Museums Can improve the Health and Wellbeing of older adults through creative aging programs",
+      "journal": "Museum",
+      "year": "2026",
+      "pages": "May/June",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Tao of Creative Aging: Cultivating Happiness, Combatting Ageism",
+      "journal": "Museum",
+      "year": "2021",
+      "pages": "September-October",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Museums and Creative Aging: a Healthful Partnership",
+      "journal": "American Alliance of Museums (commissioned paper)",
+      "year": "2021",
+      "pages": "June 1",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Art Museum Chasm",
+      "journal": "Fwd: Museums (University of Illinois, Chicago)",
+      "year": "2017",
+      "pages": "June",
+      "details": "Reprinted in New Art Examiner, Summer 2019",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Museum Studies at a Crossroads",
+      "journal": "Museum",
+      "year": "2012",
+      "pages": "Jan/Feb",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Culture of Incarceration",
+      "journal": "Museums and Social Issues (ReThinking Incarceration)",
+      "volume": "Volume 6:1",
+      "year": "2011",
+      "pages": "December",
+      "details": "Co-edited with Kris Morrissey",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "From Berkeley to Dubai: Museum Studies as Soft Power",
+      "journal": "Museum",
+      "year": "2011",
+      "pages": "July/August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Lessons from the Great Depression",
+      "journal": "Museum",
+      "year": "2009",
+      "pages": "May/June",
+      "url": "",
+      "url_unavailable": true
+    },
+
+    {
+      "title": "Shotgun Wedding: The new California Academy of Sciences African Hall",
+      "journal": "Exhibitionist",
+      "volume": "Volume 28, no. 1",
+      "year": "2009",
+      "pages": "355-360",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Literary Devices: Period Rooms as Fantasy and Archetype",
+      "journal": "Curator: The Museum Journal",
+      "year": "2008",
+      "pages": "October",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Civic Discourse: Can We Really Talk?",
+      "journal": "Museums and Social Issues",
+      "volume": "2:2",
+      "year": "2007",
+      "pages": "Fall",
+      "details": "Co-editor with Judy Koke and Kris Morrissey",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Broadcasting Dialogue: Citizen Journalism, Public Radio and Museums",
+      "journal": "Museums and Social Issues",
+      "volume": "2:2",
+      "year": "2007",
+      "pages": "Fall",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Gender in the Temple: Women and Leadership in museums",
+      "journal": "Museum News",
+      "volume": "85:3",
+      "year": "2007",
+      "pages": "May-June",
+      "details": "Revised and reprinted as chapter in Gender, Sexuality and Museums, ed. Amy Levin, Routledge (2010)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Looking Back: 11 Touchpoint Exhibitions of the 20th Century",
+      "journal": "Exhibitionist",
+      "year": "2006",
+      "pages": "April",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Turnover at the Top: Are Directors Burning Out?",
+      "journal": "Museum News",
+      "volume": "81:3",
+      "year": "2002",
+      "pages": "May-June",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "A Challenge for Alaska’s Museums",
+      "journal": "AlaskaNews",
+      "year": "2002",
+      "pages": "November-December",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Art and Gadgetry: The Future of the Museum visit",
+      "journal": "Museum News",
+      "volume": "80:4",
+      "year": "2001",
+      "pages": "July-August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Now Boarding: Airport Museums and the Global Audience",
+      "journal": "Museum News",
+      "volume": "80:3",
+      "year": "2001",
+      "pages": "May-June",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Contesting Popularity",
+      "journal": "WestMuse",
+      "year": "2000",
+      "pages": "7-9 (Fall)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Visions for the 21st Century Museum",
+      "journal": "Tapestry (journal of Pennsylvania Federation of Museums)",
+      "year": "2000",
+      "pages": "Spring",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Decoding the Tech Museum of Innovation",
+      "journal": "Exhibitionist (journal of National Association of Museum Exhibitors)",
+      "year": "2000",
+      "pages": "Spring",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Mouse in the Museum: Technology Training and Museum Studies Programs",
+      "journal": "Spectra 26 (Journal of Museum Computer Network)",
+      "year": "1999",
+      "pages": "18-19 (Summer)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Guts and Glory: Designing San Francisco’s New Museums",
+      "journal": "San Francisco Design Review",
+      "year": "1999",
+      "pages": "Summer",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Schizophrenic Agora: Mission, Market and the Multi-tasking Museum",
+      "journal": "Museum News",
+      "volume": "78",
+      "year": "1999",
+      "pages": "40-47 (November-December)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Challenges and Opportunities in Community Collaboration and Audience Development",
+      "journal": "Midwest Museums Annual Review",
+      "year": "1995",
+      "pages": "Spring",
+      "details": "Reprinted in U.S. Army Museum Memo (Spring, Summer and Fall, 1995). Reprinted in user's guide to Science Museum of Minnesota's nationally-distributed video Journey: Museums and Community Collaboration (1997).",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The New Atlantic Alliance: Children's Museums in Europe",
+      "journal": "Hand-to-Hand",
+      "volume": "8.2",
+      "year": "1994",
+      "pages": "Summer",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Helping Visitors in Potent Exhibits",
+      "journal": "Hand-to-Hand",
+      "volume": "8.1",
+      "year": "1994",
+      "pages": "Spring",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Collective Management in the Arts",
+      "journal": "Communities Magazine",
+      "volume": "No. 45",
+      "year": "1980",
+      "pages": "Oct/Nov",
       "url": "",
       "url_unavailable": true
     }
   ],
   "essays": [
     {
-      "title": "Creative Aging Programs in Local Museums",
-      "publication": "Museum Magazine",
-      "date": "May 2021",
+      "title": "Learning from History: Museum Heroes in the Archives",
+      "publication": "Center for the Future of Museums Blog",
+      "date": "3 March 2026",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Jew in the Museum",
+      "publication": "Self-published Field Essay",
+      "date": "April 2024",
+      "details": "Essay on historical and contemporary antisemitism within the museum field, co-authored with Mitchell Schwarzer",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Setting the Context",
+      "publication": "Hand-to-Hand (60th Anniversary issue celebrating the founding of the Association of Children’s Museums)",
+      "date": "January 2023",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Lessons from History: Museums and Pandemics",
+      "publication": "Center for the Future of Museums Blog",
+      "date": "March 10, 2020",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Forward",
+      "publication": "Women and Museums (ed. Anne Ackerson and Joan Baldwin)",
+      "date": "2017",
+      "details": "Published by Routledge",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "A Reply to Peter Singer's Thought Experiment on Art museums and Effective Altruism",
+      "publication": "Museums and Social Issues",
+      "date": "Spring 2014",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "How Do Museum Studies programs address the Nature of Museums today?",
+      "publication": "Exhibitionist",
+      "date": "Spring 2011",
+      "details": "With seven other commentators, pages 82-86",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Revisiting Leadership",
+      "publication": "WestMuse",
+      "date": "Winter 2005",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The “L” Word (Leadership)",
+      "publication": "Hand to Hand",
+      "date": "Winter 2003",
       "url": "",
       "url_unavailable": true
     }
   ],
   "reviews": [
+    {
+      "title": "Review of Jonathan Conlin, The Met: A History of a Museum and its People (2024)",
+      "journal": "Journal of the History of Collections",
+      "year": "2025",
+      "pages": "May",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Jeffrey Abt, Too Jewish or Not Jewish Enough: Ritual Objects and Avant-Garde Art at the Jewish Museum of New York (2024)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2024",
+      "pages": "December",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Daniel H. Weiss, Why the museum matters (2020)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2023",
+      "pages": "Spring",
+      "url": "",
+      "url_unavailable": true
+    },
     {
       "title": "Review of Michelle Henning, Photography: The Unfettered Image",
       "journal": "Museum History Review",
@@ -1572,14 +2004,218 @@ const localCvData = {
       "pages": "112-114",
       "url": "",
       "url_unavailable": true
+    },
+    {
+      "title": "Review of A New Way of Seeing Art: Louvre, Abu Dhabi, Exhibition",
+      "journal": "Exhibition Review",
+      "year": "2019",
+      "pages": "May",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Leon Trotsky House Museum, Mexico City, Exhibition",
+      "journal": "Exhibition Review",
+      "year": "2018",
+      "pages": "14-15 (May)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Fiona Candlin, Micromuseology: An Analysis of Small Independent Museums (2016)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2017",
+      "pages": "July",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Karen Busby, Adam Muller and Andrew Woolford, eds., The Idea of A Human Rights Museum (2015)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2016",
+      "pages": "June",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Neil Harris, Capital Culture: J. Carter Brown, the National Gallery of Art, and the Reinvention of the Museum Experience (2013)",
+      "journal": "Reviews in American History",
+      "year": "2015",
+      "pages": "June",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Janet Marstine, ed., Museum Ethics (2011)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2011",
+      "pages": "August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Robert Janes, Museums in a Troubled World: Renewal, Irrelevance or Collapse? (2009)",
+      "journal": "International Journal of Museum Management and Curatorship",
+      "year": "2009",
+      "pages": "December/January",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Marcia Tucker, a short life of trouble: forty years in the new york art world (2009)",
+      "journal": "Museum",
+      "year": "2009",
+      "pages": "July/August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Danny Danziger, Museum: Behind the Scenes at the Metropolitan Museum of Art (2007)",
+      "journal": "Museum News",
+      "year": "2007",
+      "pages": "November/December",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Elaine Heumann Gurian, Civilizing the Museum (2006)",
+      "journal": "Museum News",
+      "year": "2006",
+      "pages": "September/October",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of N. Elizabeth Schlatter, How to Become an Art Curator (2003)",
+      "journal": "Museum News",
+      "year": "2003",
+      "pages": "July/August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Scott Sayre, The Millenial Museum (1999)",
+      "journal": "Curator",
+      "year": "2002",
+      "pages": "August",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Victoria Newhouse, Towards a New Museum (1998) / Gerhard Mack, The Twenty-first Century Art Museum (1998)",
+      "journal": "Design Book Review 44",
+      "year": "2000",
+      "pages": "Fall",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Mary Maher, ed., Collective Vision: Starting and Sustaining a Children’s Museum (1997)",
+      "journal": "Curator",
+      "year": "1998",
+      "pages": "April",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Review of Jane R. Glaser, Artemis A. Zenetou, Museums A Place to Work: Planning Museum Careers (1996)",
+      "journal": "Curator",
+      "year": "1997",
+      "pages": "September",
+      "url": "",
+      "url_unavailable": true
     }
   ],
   "regional_activities": [
     {
-      "title": "Recipient of the Western Museums Association (WMA) Leadership Award",
-      "type": "Award",
-      "source": "Western Museums Association",
-      "date": "2018",
+      "title": "The Diorama Dilemma",
+      "type": "Research Report",
+      "source": "National Science Foundation Report",
+      "date": "2009 - 2010",
+      "details": "Co-author and researcher (with Mary Jo Sutton)",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Butterflies in the Basement: Requiem for the Snow Museum of Natural History",
+      "type": "Exhibition Publication",
+      "source": "The Marvelous Museum, Mark Dion exhibition",
+      "date": "2010",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "The Kennedy Years",
+      "type": "Exhibition Curator & Presenter",
+      "source": "Bedford Gallery",
+      "date": "2006",
+      "details": "Facilitated, researched and presented JFKU's 40th anniversary historical exhibition about John F. Kennedy's presidency",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Richmond History Museum WWII Archives Project",
+      "type": "Curatorial Team Member",
+      "source": "Richmond History Museum",
+      "date": "2002",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Georgia O’Keeffe: The Poetry of Things",
+      "type": "Program Committee Member",
+      "source": "Fine Arts Museums of San Francisco",
+      "date": "2000",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Early Childhood Exhibitions",
+      "type": "Advisory Committee Member",
+      "source": "California Academy of Sciences",
+      "date": "1999",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Russia in Black and White",
+      "type": "Education Committee Member",
+      "source": "Jewish Museum, San Francisco, CA",
+      "date": "1997",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "If These Shoes Could Talk",
+      "type": "Exhibition Team Member",
+      "source": "Brooklyn Children's Museum",
+      "date": "1994 - 1995",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Face to Face: Dealing with Prejudice and Discrimination",
+      "type": "Exhibition Team Member",
+      "source": "Chicago Children's Museum",
+      "date": "1993 - 1995",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Broadcast Interviews",
+      "type": "Radio & TV Appearances",
+      "source": "Various Stations",
+      "date": "1994 - 2025",
+      "details": "Interviewed for podcasts, radio and news stations: WBEZ, Chicago (October 1994); KQED Forum, San Francisco (October 2007); KPFA (October 2011); Knight Foundation (Summer 2019); CNN Live (August 2025); ABC Prime Time News (August 2025).",
+      "url": "",
+      "url_unavailable": true
+    },
+    {
+      "title": "Press Coverage & Features",
+      "type": "Press Coverage",
+      "source": "Various Media Channels",
+      "date": "Ongoing",
+      "details": "Frequently interviewed and quoted in print media: La Croix, The Guardian, New York Times, Wall Street Journal, San Francisco Chronicle, Robb Report, Seattle Times, Dallas Morning News, Philadelphia Enquirer, Chicago Tribune, Washington Post, Baltimore Sun, Business Week",
       "url": "",
       "url_unavailable": true
     },
@@ -1598,28 +2234,85 @@ const localCvData = {
       "Museum Administration & Governance"
     ],
     "seminars": [
-      "Museum Ethics & Law",
-      "Exhibition Planning & Design",
-      "Decolonizing the Museum Space",
-      "Visitor Studies & Evaluation"
+      "Curatorial Practice",
+      "Introduction to the Museum Profession",
+      "Strategic Planning"
     ],
     "workshops": [
       "Grant Writing for Cultural Non-Profits",
       "Museum Education & Programming"
+    ],
+    "adjunct_teaching": [
+      "Boston Center for Adult Education (part-time faculty from 1986 - 91)",
+      "Massachusetts College of Art (1988)",
+      "New Hampshire Writer's Center (1988)",
+      "Erikson Institute, Chicago (1991)",
+      "Bank Street College Museum Leadership Program, New York (2011)",
+      "California College of the Arts Curatorial Practice Program (2011 – 2013; 2020)",
+      "University of Victoria, Canada (2012 – 2013)",
+      "Emirates Foundation for Philanthropy & Tourism/Culture Authority, Abu Dhabi United Arab Emirates (2010 – 2014)",
+      "Osher Lifelong Learning Institute, Berkeley CA (2025)",
+      "Art Bridges (2026)"
+    ],
+    "guest_lectures": [
+      "University of Iowa (2007)",
+      "University of Washington, Seattle (2009)",
+      "San Francisco City College (2010 - 2015)",
+      "Chabot College (2013)",
+      "UC Berkeley extension (2014)",
+      "State University of New York, Buffalo (2010)",
+      "University of California Santa Cruz (2011)",
+      "University of Texas, Austin (2014)",
+      "Sonoma State University (2015 - present)",
+      "University of California, Berkeley (2016)",
+      "California State University, Chico (2016)",
+      "Pierce College (2020)"
     ]
   },
-  "fellowships": [
-    "WMA Leadership Award (2018)",
-    "American Alliance of Museums Centennial Honor Roll (2006)",
-    "USF Faculty Service Award (2016)",
-    "Boston University Scholarship in Museum Education (1981-1983)"
+  "awards": [
+    "Lifetime Achievement Leadership Award, Western Museums Association, 2018.",
+    "CAMMY Annual Leadership Award (California Association of Museums), Received on behalf of JFKU Museum Studies, 2008.",
+    "Excel Award (Silver) for Professional Book of the Year, 2006.",
+    "University-wide Harry L. Morrison Outstanding Teacher of the Year Award, John F. Kennedy University, 2003."
   ],
   "community": [
-    "Editorial Board: Museum History, AAM (2015 - present)",
-    "Member: Western Museums Association Board (2008 - 2014)",
-    "Advisory Council: California Historical Society (2005 - 2010)"
+    "Strategic Planning Advisory Committee member, Contemporary Jewish Museum (2022)",
+    "Grant reviewer and evaluator:<ul class=\"timeline-consulting\" style=\"margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.5;\"><li style=\"margin-bottom: 0.25rem;\">Social Science and Humanities Research Council of Canada (2013, 2017).</li><li style=\"margin-bottom: 0.25rem;\">Institute for Museum and Library Services, (2005, 2012 - 2018).</li><li style=\"margin-bottom: 0.25rem;\">Metropolitan Life Foundation Promising Practice Award (2001 – 2003).</li><li style=\"margin-bottom: 0.25rem;\">Smithsonian Institution Education Innovation Awards (2004, 2005).</li><li style=\"margin-bottom: 0.25rem;\">California Arts Council Touring Theatre Program (1985).</li></ul>",
+    "Editorial Board member:<ul class=\"timeline-consulting\" style=\"margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.5;\"><li style=\"margin-bottom: 0.25rem;\">International Journal of Museum Management and Curatorship, (2004 – present). Best Papers Annual Award Committee (2005 – 2009).</li><li style=\"margin-bottom: 0.25rem;\">Museums and Social Issues, (2006 – present); co-editor (with Judy Koke and Kris Morrissey), Fall 2007 issue on Museums and Civic Discourse; co-editor (with Kris Morrissey), Winter 2011 issue on ReThinking Incarceration.</li><li style=\"margin-bottom: 0.25rem;\">Journal of Museum History (2008 – present).</li><li style=\"margin-bottom: 0.25rem;\">American Association of State and Local Histories (2000 – 2008).</li></ul>",
+    "External Graduate Museum Studies Program Review Team member:<ul class=\"timeline-consulting\" style=\"margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.5;\"><li style=\"margin-bottom: 0.25rem;\">Indiana University Purdue University Indianapolis (IUPUI): (Indianapolis, IN: 2017, Chair & Primary Author).</li><li style=\"margin-bottom: 0.25rem;\">University of North Carolina, Greensboro: 2014, Promotion review evaluator.</li><li style=\"margin-bottom: 0.25rem;\">University of the Arts (Philadelphia, PA: 2013, Chair & Primary Author).</li><li style=\"margin-bottom: 0.25rem;\">Kansas University Department of Museum Studies (Lawrence, KS: 2011).</li><li style=\"margin-bottom: 0.25rem;\">University of Nebraska Graduate Museum Studies Program (Lincoln, NE: 1999, Chair & Report Primary Author).</li></ul>",
+    "Manuscript Reviewer:<ul class=\"timeline-consulting\" style=\"margin-top: 0.5rem; padding-left: 1.25rem; font-size: 0.85rem; line-height: 1.5;\"><li style=\"margin-bottom: 0.25rem;\">Journal of the History of Collections (Oxford University)</li><li style=\"margin-bottom: 0.25rem;\">Curator Magazine</li><li style=\"margin-bottom: 0.25rem;\">AltaMira Press</li><li style=\"margin-bottom: 0.25rem;\">Routledge Press</li><li style=\"margin-bottom: 0.25rem;\">LeftCoast Press</li><li style=\"margin-bottom: 0.25rem;\">Allworth Press</li><li style=\"margin-bottom: 0.25rem;\">University of Colorado Press</li><li style=\"margin-bottom: 0.25rem;\">University of California Press</li><li style=\"margin-bottom: 0.25rem;\">Taylor and Francis</li><li style=\"margin-bottom: 0.25rem;\">International Journal of Heritage Studies</li></ul>",
+    "Transformation Team, California State Parks, team member, 2015 - 16.",
+    "Emirates Foundation for Philanthropy and Tourism & Cultural Authority (Abu Dhabi; United Arab Emirates), Co-developed (with Salwa Mikdadi) and taught on-line and on-site introductory museum training course for Emirati citizens (2010 to present)  & combined curatorial practice/museum studies training course for Emirati citizens and other Arab nationals (2012).",
+    "University of Washington, Seattle, New Directions IMLS-funded Project Advisor (2009).",
+    "Abu Dhabi Authority for Culture and Heritage, Museum Professional Education Program, consulting team member, January 2009; Cultural Heritage Conference Speaker, April 2010.",
+    "Institute for Museum and Library Services/Florida State University:  Colloquium on Museum Studies curriculum, Ringling Museum, April 2008 (steering committee; keynote speaker).",
+    "Western Museums Association:  Board member (2001 – 2006); Co-chair, program committee for annual conference, Sacramento, CA (1999); Program committee member and meeting facilitator, Victoria, British Columbia (2000).",
+    "Smithsonian Institution Center for Museum Studies:  Strategic Planning Advisor (1999), Faculty (“Writing for Publication” workshop – 2001).",
+    "AAM - Committee on Museum Professional Training:  Board member (2002 – 2007); Career Mentoring Roundtable leader (2001 – 2004).",
+    "Getty Leadership Institute:  Museum studies leadership forum invited participant, March 2004.",
+    "Ford Foundation Leadership Awards for Innovation:  Completed successful nomination for 2004 recipient, Ron Chew (director, Wing Luke Asian Museum).",
+    "Committee for the new DeYoung Museum, (2002 – 2005).",
+    "Strategic Planning Committee member, Judah L. Magnes Museum (2004 – 2007).",
+    "Chapin Hall Center for Children, University of Chicago, Museums Learning Project, Advisory Committee member (1999).",
+    "Association of Youth Museums National Conference, San Jose, CA, Program Committee, (1998.)",
+    "Children's museum educators’ breakfast, American Association of Museums, Chair -- Seattle WA, 1994; co-chair -- Fort Worth, TX, 1993."
   ],
   "videos": [
+    {
+      "title": "Riches, Rivals and Radicals: 100 Years of History in America",
+      "source": "Great Museums Series (PBS)",
+      "date": "2020",
+      "url": "https://greatmuseums.org/riches-rivals-and-radicals-100-years-of-museums-in-america/",
+      "snippet": "Onscreen narrator"
+    },
+    {
+      "title": "Narrator, “Questions and Answers,” 30-minute artist video, produced by Lise Swenson for opening of deYoung Museum, San Francisco, October 2005.",
+      "source": "Lise Swenson Production / deYoung Museum",
+      "date": "October 2005",
+      "url": "",
+      "url_unavailable": true,
+      "snippet": ""
+    },
     {
       "title": "An Elephant in the Closet: The history of habitat dioramas",
       "source": "Berkeley LASER Series",
@@ -1636,7 +2329,458 @@ const localCvData = {
       "snippet": "Expert commentary on the role of the WPA in American museums."
     }
   ],
-  "lectures": []
+  "lectures": [
+    {
+      "title": "Communities for Positive Aging",
+      "institution": "International Museum Day, Singapore",
+      "date": "May 2025",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Art and Science Forum",
+      "institution": "Shanghai Museum, China",
+      "date": "July 2018",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Julia Norton Babson Annual Lecture",
+      "institution": "Montclair Art Museum, NJ",
+      "date": "October 2013",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Plenary Address",
+      "institution": "Japan Exhibition Society, National Museum of Ethnology, Osaka, Japan",
+      "date": "November 2012",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Key Moments in American Museum History",
+      "institution": "Chinese Delegation (at AAM Conference), Minneapolis, MN",
+      "date": "April 2012",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Invited Keynote",
+      "institution": "Arab Gulf States Museum Association, Sharjah, UAE",
+      "date": "December 2011",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Keynote Address",
+      "institution": "Alaska Museums Association, Valdez, AK",
+      "date": "September 2011",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Plenary Speaker",
+      "institution": "7th Annual Museum Building Symposium, deYoung Museum, San Francisco",
+      "date": "April 2011",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "The Museum Strikes Back",
+      "institution": "University of California, Santa Cruz",
+      "date": "November 2009",
+      "type": "Keynote Lecture"
+    },
+    {
+      "title": "40th Anniversary Keynote Address",
+      "institution": "San Jose Museum of Art",
+      "date": "May 2009",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Centennial Celebration Address",
+      "institution": "University of the Arts, Philadelphia",
+      "date": "May 2009",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Keynote Address",
+      "institution": "Colorado/Wyoming Museums Association, Grand Junction CO",
+      "date": "April 2007",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Museum Career Conference Keynote",
+      "institution": "University of Iowa, Iowa City IA",
+      "date": "April 2007",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Keynote Address",
+      "institution": "Museum Educators Roundtable, Guggenheim Museum, New York",
+      "date": "February 2007",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Keynote Speaker",
+      "institution": "ArtTable, Oakland Museum",
+      "date": "January 2007",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Plenary Address",
+      "institution": "California Association of Museums",
+      "date": "July 2002 & February 2007",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Invited Keynote Address",
+      "institution": "Sacramento Association of Museums",
+      "date": "January 2006",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Coming of Age as Professionals",
+      "institution": "Association of College and University Museums, Salem, OR",
+      "date": "May 2003",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Invited Plenary Keynote",
+      "institution": "Alaska Museums Association, Valdez, AK",
+      "date": "September 2001",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Annual Meeting Keynote Address",
+      "institution": "San Jose Museum of Art Annual Board Meeting",
+      "date": "September 2001",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Contesting Popularity",
+      "institution": "Western Museums Association Annual Conference, Victoria, BC",
+      "date": "October 2000",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Visions for the 21st Century",
+      "institution": "Pennsylvania Federation of Museums, State College, PA",
+      "date": "April 2000",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Collections Management Seminar Keynote",
+      "institution": "California Department of Parks and Recreation, Asilomar, CA",
+      "date": "February 2000",
+      "type": "Keynote Address"
+    },
+    {
+      "title": "Culture Wars: Twenty Years in Museum Education",
+      "institution": "Museum Educators of Southern California (L.A.) & Cultural Connections (S.F.)",
+      "date": "1997",
+      "type": "Plenary Address"
+    },
+    {
+      "title": "Creative Aging",
+      "institution": "Bay Area Visitor Engagement (Zoom)",
+      "date": "September 2021",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Evolution of Museum Architecture",
+      "institution": "Palo Alto Art Center (Zoom)",
+      "date": "2020",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Contemporary Art Museums and Collecting Practices",
+      "institution": "Abu Dhabi Art Fair",
+      "date": "November 2018",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "American Museums: Past, Present and Future",
+      "institution": "Shanghai Museum, China",
+      "date": "July 2018",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Elephants in the Closet: A Brief History of Habitat Dioramas",
+      "institution": "LASER (UC Berkeley & Stanford University)",
+      "date": "2017",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "New Museums, New Nations and Identity Politics",
+      "institution": "Yale University Council on Middle East Studies & CSU Chico",
+      "date": "2015 - 2016",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "The Elephant in the Museum: My Hunt for the Snow Museum of Natural History",
+      "institution": "Birdhouse Art Collective, Oakland, CA",
+      "date": "October 2015",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Exhibits Without Borders: Museum Professions in a Global World",
+      "institution": "New York University, Abu Dhabi",
+      "date": "December 2014",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "The Museum Boom in the United Arab Emirates",
+      "institution": "Blanton Art Museum, Austin, TX",
+      "date": "November 2014",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Museums and the Great Depression",
+      "institution": "Lafayette Public Library, CA",
+      "date": "March 2010",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Visible Power: Art in National Life",
+      "institution": "University of California, Berkeley",
+      "date": "July 2009",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Collecting Instincts",
+      "institution": "Toledo Art Museum, Toledo, OH",
+      "date": "May 2008",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Year of the Museum Series",
+      "institution": "Oakland Museum, Crocker Art Museum, deYoung Museum, Magnes Museum",
+      "date": "2006 - 2008",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Do Museums Matter?",
+      "institution": "deYoung Museum Opening Panel, San Francisco",
+      "date": "July 2005",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Museum Architecture and Shopper-tainment",
+      "institution": "Denver Art Museum, Denver, CO",
+      "date": "March 2000",
+      "type": "Public Lecture"
+    },
+    {
+      "title": "Museums and Intergenerational Learning",
+      "institution": "American Alliance of Museums (AAM), Philadelphia",
+      "date": "May 2026",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museums and Creative Aging",
+      "institution": "Western Museums Association and California Museums Association",
+      "date": "October 2021",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museums and Creative Aging",
+      "institution": "National Association of Grantmakers in Aging",
+      "date": "October 2021",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museums Engaging with Homeless and Foster Youth",
+      "institution": "Western Museums Association, Phoenix, AZ",
+      "date": "September 2016",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museum Studies: Who are our stakeholders?",
+      "institution": "Theory of Museology Conference (Athens, Greece / Podcast)",
+      "date": "December 2015",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Writing for Social Justice",
+      "institution": "American Alliance of Museums, Atlanta, GA",
+      "date": "April 2015",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Brainstorm: Growing the Profession",
+      "institution": "Council of American Jewish Museums Annual Conference, San Francisco",
+      "date": "March 2015",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "We Have a Dream: Building a Multicultural Workforce",
+      "institution": "California Association of Museums, San Diego, CA",
+      "date": "February 2015",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Playing the Numbers: Financial Rules for the New Economy",
+      "institution": "Western Museums Association, Las Vegas, NV",
+      "date": "October 2014",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museum Studies Training: Where we are today",
+      "institution": "California Association of Museums, Napa, CA",
+      "date": "March 2014",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museum Education in the Arab Gulf States",
+      "institution": "American Association of Museums, Baltimore, MD",
+      "date": "May 2013",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Professional Writing: Career Workshop",
+      "institution": "American Association of Museums, Los Angeles, CA",
+      "date": "May 2010",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Exhibitions that Have Changed My Life",
+      "institution": "American Association of Museums, Denver, CO",
+      "date": "April 2008",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "History of Museum Studies Programs",
+      "institution": "IMLS/CHIPS Conference, Ringling Museum of Art, Sarasota, FL",
+      "date": "April 2008",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "What Keeps Directors Up at 4am?",
+      "institution": "Western Museums Association, Oakland, CA",
+      "date": "October 2007",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Leafing through History",
+      "institution": "Western Museums Association, Boise, ID",
+      "date": "October 2006",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "The American Antiquities Act & The American Museum",
+      "institution": "American Association of Museums, Indianapolis, IN",
+      "date": "May 2005",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Public History Forum",
+      "institution": "Organization of American Historians National Conference, San Jose, CA",
+      "date": "March 2005",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "From the Past Lie Clues to the Future",
+      "institution": "American Association of Museums, New Orleans, LA",
+      "date": "May 2004",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Toward a Better Workplace & Transitional Leadership",
+      "institution": "Western Museums Association, Reno, NV",
+      "date": "October 2003",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Gadgets or Godsends? & Airport Museums in the West",
+      "institution": "Western Museums Association, Palm Springs, CA",
+      "date": "October 2001",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Airports and Museums: Reaching a Global Audience",
+      "institution": "American Association of Museums, St. Louis, MO",
+      "date": "May 2001",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Get with IT: Museums and Information Technology",
+      "institution": "American Association of Museums, Baltimore, MD",
+      "date": "May 2000",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "New Learning Theory and Museums: EdComm Workshop",
+      "institution": "Western Museums Association, Sacramento, CA",
+      "date": "September 1999",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Growing up as Professionals",
+      "institution": "Association of Youth Museums, NYU, New York, NY",
+      "date": "May 1999",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Reinventing the Marketing Mix: Product, Position, Price",
+      "institution": "American Association of Museums, Cleveland, OH",
+      "date": "April 1999",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Opening Doors to Better Tours",
+      "institution": "Docent Training at Crocker Art Museum, Sacramento, CA",
+      "date": "October 1998",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Director’s Annual Lunch and Forum",
+      "institution": "Western Museums Association, Anchorage, AK",
+      "date": "September 1998",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Museums and Schools: Finding a Connection",
+      "institution": "Association of Youth Museums, San Jose, CA",
+      "date": "May 1998",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Finding Connections: Creating Career Opportunities from Museum Trends",
+      "institution": "American Association of Museums, Los Angeles, CA",
+      "date": "May 1998",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "From Hornet's Nest to Beehive: Developing Exhibits through Teamwork",
+      "institution": "Western Museums Association, San Diego, CA",
+      "date": "September 1997",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Community Collaboration and Audience Development",
+      "institution": "Midwest Museum Conference, Chicago, IL",
+      "date": "November 1994",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Multicultural Pluralism in American Children's Museums",
+      "institution": "Hands-On, International Youth Museum Conference, Berlin, Germany",
+      "date": "November 1993",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Partnerships for Scientific Literacy in the Classroom",
+      "institution": "Association of Science and Technology Centers Conference, Columbus, OH",
+      "date": "October 1993",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "The Visible Hand: Tension Between Marketing and Education in Children's Museums",
+      "institution": "Association of Youth Museums, Houston, TX",
+      "date": "May 1993",
+      "type": "Conference Presentation"
+    },
+    {
+      "title": "Curiosity and Creativity: Research at the Chicago Children's Museum",
+      "institution": "Council for the Advancement and Support of Education, Chicago, IL",
+      "date": "April 1993",
+      "type": "Conference Presentation"
+    }
+  ]
 };
 
 // Marjorie Schwarzer Portfolio website logic
@@ -1646,6 +2790,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let activeTab = "scholarly_articles";
   let searchQuery = "";
   let itemsLimit = 10;
+  let lecturesActiveTab = "keynotes";
+  let lecturesLimit = 10;
   
   // Elements
   const educationContainer = document.getElementById("education-container");
@@ -1661,6 +2807,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentYearSpan = document.getElementById("current-year");
   const themeBtn = document.getElementById("theme-btn");
   const mainHeader = document.getElementById("main-header");
+  
+  const lecturesTabs = document.getElementById("lectures-tabs");
+  const lecturesItemsContainer = document.getElementById("lectures-items-container");
+  const lecturesLoadMoreBtn = document.getElementById("lectures-load-more-btn");
   
   // Set Current Year
   currentYearSpan.textContent = new Date().getFullYear();
@@ -1708,11 +2858,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Render Publications Hub (initial view)
     renderHub();
     
+    // Render Lectures & Presentations section
+    renderLectures();
+    
     // Render Courses
     renderCourses(cvData.courses);
     
-    // Render Fellowships & Grants
-    renderFellowships(cvData.fellowships);
+    // Render Professional Awards
+    renderFellowships(cvData.awards);
     
     // Render Editorial Boards / Community
     renderCommunity(cvData.community);
@@ -1740,10 +2893,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderEducation(education) {
     educationContainer.innerHTML = education.map(edu => `
       <div class="edu-item">
-        <h4 class="edu-degree">${edu.degree} in ${edu.field}</h4>
-        <p class="edu-inst">${edu.institution}, ${edu.location}</p>
-        <p class="edu-date">${edu.date}</p>
-        ${edu.details ? `<p class="edu-detail">${edu.details}</p>` : ''}
+        <p class="edu-text" style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.5rem; font-family: var(--font-sans); line-height: 1.6;">${edu.text}</p>
       </div>
     `).join('');
   }
@@ -1861,9 +3011,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (activeTab === "reviews") {
       list = cvData.reviews;
       itemType = "Review";
-    } else if (activeTab === "lectures") {
-      list = cvData.lectures;
-      itemType = "Lecture";
     } else if (activeTab === "interviews_media") {
       // Combine videos and regional_activities
       const videos = cvData.videos || [];
@@ -1956,8 +3103,6 @@ document.addEventListener("DOMContentLoaded", () => {
         metaText = `In <strong>${item.publication}</strong> ${item.date ? `(${item.date})` : `(${item.year})`}`;
       } else if (activeTab === "reviews") {
         metaText = `Review in <strong>${item.journal}</strong> (${item.year}) ${item.pages ? `, pages ${item.pages}` : ''}`;
-      } else if (activeTab === "lectures") {
-        metaText = `Delivered at <strong>${item.institution}</strong> • ${item.date}`;
       } else if (activeTab === "interviews_media") {
         metaText = `<strong>${item.type}</strong> via ${item.source} • ${item.date}`;
       }
@@ -2074,10 +3219,32 @@ document.addEventListener("DOMContentLoaded", () => {
           ${courses.workshops.map(workshop => `<li>${workshop}</li>`).join('')}
         </ul>
       </div>
+      ${courses.adjunct_teaching ? `
+      <div class="course-card">
+        <h3 class="course-card-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          Adjunct Teaching
+        </h3>
+        <ul class="course-list">
+          ${courses.adjunct_teaching.map(adj => `<li>${adj}</li>`).join('')}
+        </ul>
+      </div>
+      ` : ''}
+      ${courses.guest_lectures ? `
+      <div class="course-card">
+        <h3 class="course-card-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          Guest Lectures
+        </h3>
+        <ul class="course-list">
+          ${courses.guest_lectures.map(guest => `<li>${guest}</li>`).join('')}
+        </ul>
+      </div>
+      ` : ''}
     `;
   }
   
-  // Render Grants & Fellowships
+  // Render Professional Awards
   function renderFellowships(fellowships) {
     fellowshipsContainer.innerHTML = fellowships.map(f => `
       <div class="fellowship-item">${f}</div>
@@ -2171,6 +3338,83 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       }
+    });
+  }
+
+  // Dynamic Lectures rendering
+  function renderLectures() {
+    if (!cvData || !cvData.lectures) return;
+    
+    let list = [];
+    if (lecturesActiveTab === "keynotes") {
+      list = cvData.lectures.filter(l => {
+        const t = (l.type || "").toLowerCase();
+        return t.includes("keynote") || t.includes("plenary") || t.includes("invited");
+      });
+    } else if (lecturesActiveTab === "public_lectures") {
+      list = cvData.lectures.filter(l => {
+        const t = (l.type || "").toLowerCase();
+        return t.includes("public lecture");
+      });
+    } else if (lecturesActiveTab === "conferences") {
+      list = cvData.lectures.filter(l => {
+        const t = (l.type || "").toLowerCase();
+        return t.includes("conference") || t.includes("presentation");
+      });
+    }
+    
+    const totalItems = list.length;
+    const paginatedList = list.slice(0, lecturesLimit);
+    
+    if (totalItems === 0) {
+      lecturesItemsContainer.innerHTML = `<div class="no-results">No presentations found.</div>`;
+      lecturesLoadMoreBtn.style.display = "none";
+      return;
+    }
+    
+    lecturesItemsContainer.innerHTML = paginatedList.map(item => `
+      <div class="item-row">
+        <div class="item-main">
+          <div class="item-meta" style="margin-bottom: 0.5rem;">
+            <span class="item-tag">${item.type}</span>
+          </div>
+          <h3 class="item-title-link" style="color: var(--text-primary); cursor: default; hover: none;">${item.title}</h3>
+          <p class="item-meta" style="margin-top: 0.25rem;">Delivered at <strong>${item.institution}</strong> • ${item.date}</p>
+        </div>
+      </div>
+    `).join('');
+    
+    if (totalItems > lecturesLimit) {
+      lecturesLoadMoreBtn.style.display = "inline-flex";
+    } else {
+      lecturesLoadMoreBtn.style.display = "none";
+    }
+  }
+  
+  // Lectures Tab Event Listeners
+  if (lecturesTabs) {
+    lecturesTabs.addEventListener("click", (e) => {
+      const targetTab = e.target.closest(".tab-btn");
+      if (!targetTab) return;
+      
+      lecturesTabs.querySelectorAll(".tab-btn").forEach(btn => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-selected", "false");
+      });
+      
+      targetTab.classList.add("active");
+      targetTab.setAttribute("aria-selected", "true");
+      
+      lecturesActiveTab = targetTab.dataset.tab;
+      lecturesLimit = 10;
+      renderLectures();
+    });
+  }
+  
+  if (lecturesLoadMoreBtn) {
+    lecturesLoadMoreBtn.addEventListener("click", () => {
+      lecturesLimit += 10;
+      renderLectures();
     });
   }
 });
