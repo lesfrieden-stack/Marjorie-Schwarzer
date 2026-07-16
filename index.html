@@ -1248,11 +1248,11 @@ footer {
                 <span class="stat-label">Published Books</span>
               </div>
               <div class="stat-box">
-                <span class="stat-num" id="years-count">35+</span>
+                <span class="stat-num" id="years-count">45+</span>
                 <span class="stat-label">Years of Scholarship</span>
               </div>
               <div class="stat-box">
-                <span class="stat-num" id="articles-count">30+</span>
+                <span class="stat-num" id="articles-count">75+</span>
                 <span class="stat-label">Articles & Essays</span>
               </div>
             </div>
@@ -1676,8 +1676,8 @@ const localCvData = {
       "journal": "Museum",
       "year": "2021",
       "pages": "September-October",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://www.aam-us.org/2021/09/01/point-of-view-the-tao-of-creative-aging/",
+      "url_unavailable": false
     },
     {
       "title": "Museums and Creative Aging: a Healthful Partnership",
@@ -1719,8 +1719,16 @@ const localCvData = {
       "journal": "Museum",
       "year": "2011",
       "pages": "July/August",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://www.aam-us.org/2011/07/01/museum-studies-as-soft-diplomacy-from-berkeley-to-abu-dhabi/",
+      "url_unavailable": false
+    },
+    {
+      "title": "The Diorama Dilemma",
+      "journal": "National Science Foundation report",
+      "year": "2009-10",
+      "details": "Co-authored with Mary Jo Sutton",
+      "url": "https://informalscience.org/research/diorama-dilemma-literature-review-and-analysis-2009/",
+      "url_unavailable": false
     },
     {
       "title": "Lessons from the Great Depression",
@@ -1745,8 +1753,8 @@ const localCvData = {
       "journal": "Curator: The Museum Journal",
       "year": "2008",
       "pages": "October",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.2151-6952.2008.tb00321.x",
+      "url_unavailable": false
     },
     {
       "title": "Civic Discourse: Can We Really Talk?",
@@ -2101,8 +2109,8 @@ const localCvData = {
       "journal": "Curator",
       "year": "2002",
       "pages": "August",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.2151-6952.2001.tb01168.x",
+      "url_unavailable": false
     },
     {
       "title": "Review of Victoria Newhouse, Towards a New Museum (1998) / Gerhard Mack, The Twenty-first Century Art Museum (1998)",
@@ -2117,8 +2125,8 @@ const localCvData = {
       "journal": "Curator",
       "year": "1998",
       "pages": "April",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.2151-6952.1998.tb00817.x",
+      "url_unavailable": false
     },
     {
       "title": "Review of Jane R. Glaser, Artemis A. Zenetou, Museums A Place to Work: Planning Museum Careers (1996)",
@@ -2136,8 +2144,8 @@ const localCvData = {
       "source": "National Science Foundation Report",
       "date": "2009 - 2010",
       "details": "Co-author and researcher (with Mary Jo Sutton)",
-      "url": "",
-      "url_unavailable": true
+      "url": "https://informalscience.org/research/diorama-dilemma-literature-review-and-analysis-2009/",
+      "url_unavailable": false
     },
     {
       "title": "Butterflies in the Basement: Requiem for the Snow Museum of Natural History",
@@ -3084,14 +3092,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     
-    // Pagination slicing
+    // Render all filtered items (no pagination)
     const totalItems = filteredList.length;
-    const paginatedList = filteredList.slice(0, itemsLimit);
+    const paginatedList = filteredList;
     
     // Render list rows
     if (totalItems === 0) {
       hubItemsContainer.innerHTML = `<div class="no-results">No records found matching your query.</div>`;
-      loadMoreBtn.style.display = "none";
+      if (loadMoreBtn) loadMoreBtn.style.display = "none";
       return;
     }
     
@@ -3151,10 +3159,8 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
     }).join('');
     
-    // Toggle Load More Button
-    if (totalItems > itemsLimit) {
-      loadMoreBtn.style.display = "inline-flex";
-    } else {
+    // Always hide Load More Button since we render the entire list
+    if (loadMoreBtn) {
       loadMoreBtn.style.display = "none";
     }
   }
@@ -3367,11 +3373,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     const totalItems = list.length;
-    const paginatedList = list.slice(0, lecturesLimit);
+    const paginatedList = list;
     
     if (totalItems === 0) {
       lecturesItemsContainer.innerHTML = `<div class="no-results">No presentations found.</div>`;
-      lecturesLoadMoreBtn.style.display = "none";
+      if (lecturesLoadMoreBtn) lecturesLoadMoreBtn.style.display = "none";
       return;
     }
     
@@ -3387,9 +3393,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     `).join('');
     
-    if (totalItems > lecturesLimit) {
-      lecturesLoadMoreBtn.style.display = "inline-flex";
-    } else {
+    if (lecturesLoadMoreBtn) {
       lecturesLoadMoreBtn.style.display = "none";
     }
   }
